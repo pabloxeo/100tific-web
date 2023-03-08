@@ -13,16 +13,20 @@ a{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.titulo{
+.head{
     background: #EDE7F6;
     padding: 20px;
     border-radius: 20px;
     height: 120px;
-    text-align-last: center;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    display: flex;
+}
+.titulo{
+    flex: auto;
+    text-align-last: center;
 }
 .wrapper_cient {
     display: grid;
@@ -33,15 +37,14 @@ a{
     grid-row-start: 3;
     grid-row-end: auto;
   }
-  .box {
+.box {
     background: #EDE7F6;
     padding: 5px;
-    border-radius: 50%;
+    border-radius: 10%;
     text-align-last: center;
     font: 12px system-ui;
 }
 .add{
-    padding: 20px;
     border-radius: 20px;    
     background: #EDE7F6;
     display: grid;
@@ -67,8 +70,15 @@ a{
     font-size: large;
 }
 .cient{
-    height: 200px;
-    width: 200px;
-    padding: 20px;
+    height: auto;
+    width: auto;
+    max-height: 12vw;
+    max-width: 12vw;
     border-radius: 50%;
+}
+
+.icono{
+    height: 125px;
+    width: 125px;
+    flex-direction: row-reverse;
 }
