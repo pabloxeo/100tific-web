@@ -11,30 +11,39 @@ a{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1vw;
 }
 .head{
     background: #EDE7F6;
     padding: 20px;
     border-radius: 20px;
     height: 120px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    gap: 1vw;
+    display: grid;
 }
 .titulo{
-    flex: auto;
-    text-align-last: center;
+    grid-area: auto;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+    background-color: yellowgreen;
 }
+.menu{
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: yellowgreen;
+}
+
 .wrapper_cient {
     display: grid;
-    gap: 20px;
+    gap: 1vw;
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
+    grid-row-start: 1;
     grid-row-end: auto;
   }
 .box {
@@ -50,8 +59,10 @@ a{
     display: grid;
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
+    grid-row-start: 1;
     grid-row-end: auto;
+    text-align: justify;
+    padding: 1vw;
 }
 
 .pie{
@@ -78,7 +89,8 @@ a{
 }
 
 .icono{
-    height: 125px;
-    width: 125px;
-    flex-direction: row-reverse;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 6vw;
+    width: 6vw;
 }
