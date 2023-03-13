@@ -1,5 +1,5 @@
 body{
-    background: rgb(47, 47, 47);
+    background: white;
 }
 a{
     color: black;
@@ -14,7 +14,8 @@ a{
     gap: 2vw;
 }
 .head{
-    background: #EDE7F6;
+
+    border: 1px solid black;
     padding: 2vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
@@ -32,7 +33,6 @@ a{
 }
 .menu{
     margin-top: -2vw;
-    background-color: #EDE7F6;
     padding: 2vw;
     grid-row-start: 2;
     text-align: center;
@@ -55,6 +55,7 @@ a{
     max-height: 5vw;
 }
 
+
 .wrapper_cient {
     display: grid;
     gap: 1vw;
@@ -65,21 +66,17 @@ a{
     grid-row-end: auto;
   }
 .box {
-    background: #EDE7F6;
+
+    border: 1px solid black;
     padding: 1vw;
     border-radius: 10%;
     text-align-last: center;
     font: 12px system-ui;
 }
-.box:hover   {
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px orange;
-    transition: 0.3s;
-}
 .add{
+
+    border: 1px solid black;
     border-radius: 2vw;    
-    background: #EDE7F6;
     display: grid;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -89,11 +86,12 @@ a{
 }
 
 .pie{
+
+    border: 1px solid black;
     max-height: 4vw;
     font-size: 1vw;
     text-align-last: center;
     border-radius: 2vw;
-    background: #EDE7F6;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;

@@ -23,9 +23,9 @@ a{
     grid-column-end: 4;
     grid-row-start: 1;
     display: grid;
+    gap: none;
 }
 .titulo{
-    font-size: 4vw;
     grid-column-start: 2;
     grid-column-end: 3;
     
@@ -36,8 +36,7 @@ a{
     padding: 2vw;
     grid-row-start: 2;
     text-align: center;
-    font-size: 2vw;
-    border: 1px solid black;
+    font-size: x-large;
 }
 #menu1{
     border-bottom-left-radius: 2vw;
@@ -48,11 +47,6 @@ a{
 #menu3{
     border-bottom-right-radius: 2vw;
     margin-left: -2vw;
-}
-#luz{
-    margin: -2vw;
-    max-width: 3vw;
-    max-height: 5vw;
 }
 
 .wrapper_cient {
@@ -71,12 +65,6 @@ a{
     text-align-last: center;
     font: 12px system-ui;
 }
-.box:hover   {
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px orange;
-    transition: 0.3s;
-}
 .add{
     border-radius: 2vw;    
     background: #EDE7F6;
@@ -84,19 +72,20 @@ a{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
+    grid-row-end: auto;
     text-align: justify;
     padding: 1vw;
 }
 
 .pie{
-    max-height: 4vw;
-    font-size: 1vw;
     text-align-last: center;
     border-radius: 2vw;
     background: #EDE7F6;
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: auto;
+    grid-row-end: auto;
 }
 .foto{
     text-transform: capitalize;
@@ -104,6 +93,8 @@ a{
     font-size: large;
 }
 .cient{
+    height: auto;
+    width: auto;
     max-height: 12vw;
     max-width: 12vw;
     border-radius: 50%;

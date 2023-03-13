@@ -1,11 +1,55 @@
 <html>
 <head>
-    <title>Cientifico</title>
+    <link rel="stylesheet" type="text/css" href="portada.css" id="theme-link">
+    <link rel="alternate stylesheet" href="portada_invert.css">
+
 </head>
 <body>
-    <h1></h1>
-    <p>Parrafo</p>
+    
+    <div class="wrapper_pr">
+        <div class="head"><img class="icono" src="./pic/chemical-icon-png-15.png">
+            <h1 class="titulo">
+                Científicos Importantes
+            </h1>
+        </div>
+        <a class="menu" id="menu1" href="portada.html">
+            Home
+        </a>
+        <a class="menu" id="menu2" href="cientifico.html">
+            Último Científico
+        </a>
+        <button class="menu" id="menu3" onclick="changeCSS()">
+            <img id="luz" src="./pic/SeekPng.com_light-bulb-png_62700.png" alt="luz">
+        </button>
+
+        <div class="add"> Enlaces utilizados:
+            <a href="wikipedia.com">
+                wikipedia.com
+            </a>
+        </div>
+        <div class="pie">
+            <pre>Practica realizada para la asignatura de SIBW en la UGR
+© 2023 - Pablo Cantudo Gómez
+            </pre>
+        </div>
+    </div>   
+
+    <script>
+        // Select the stylesheet <link>
+        const theme = document.querySelector("#theme-link");
+
+        // Listen for a click on the button
+        function changeCSS(){
+        // If the current URL contains "ligh-theme.css"
+            if (theme.getAttribute("href") == "portada.css") {
+                // ... then switch it to "dark-theme.css"
+                theme.href = "portada_invert.css";
+            // Otherwise...
+            } else {
+                // ... switch it to "light-theme.css"
+                theme.href = "portada.css";
+            }
+        }
+    </script>
 </body>
-
-
 </html>
