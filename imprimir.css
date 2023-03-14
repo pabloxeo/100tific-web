@@ -1,28 +1,15 @@
-
+/*
+Ajustamos el tamaño de la página al estándar
+*/
 @page{
-    size: A4 landscape;}
+    size: A4 landscape;
+}
 
-  
 
 .titulo{
     font-size: 4vw;
     grid-column-start: 2;
-    grid-column-end: 3;
-    
-}
-.menu{
-    display: none;
-    visibility: collapse;
-}
-
-.wrapper_cient {
-    display: none;
-    visibility: collapse;
-  }
-
-.add{
-    display: none;
-    visibility: collapse;
+    grid-column-end: 3;   
 }
 
 .pie{
@@ -31,14 +18,6 @@
     font-size: 1vw;
     border-radius: 2vw;
     text-align: left;
-}
-.foto{
-    display: none;
-    visibility: collapse;
-}
-.cient{
-    display: none;
-    visibility: collapse;
 }
 
 .icono{
@@ -54,6 +33,36 @@
 }
 .cient_ft{
     float: right;
+}
+
+/*
+A partir de aqui se eliminan los elementos que no queremos que aparezcan
+cambiando su visibilidad y quitando su display para que no modifique el layout
+*/
+
+
+.wrapper_cient {
+    display: none;
+    visibility: collapse;
+  }
+
+.add{
+    display: none;
+    visibility: collapse;
+}
+
+.menu{
+    display: none;
+    visibility: collapse;
+}
+
+.foto{
+    display: none;
+    visibility: collapse;
+}
+.cient{
+    display: none;
+    visibility: collapse;
 }
 
 .twitter{

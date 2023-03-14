@@ -1,11 +1,18 @@
 <html>
 <head>
+<!---
+Dos css distintos, para poder cambiar entre un tema co fondo oscuro y uno claro
+-->
     <link rel="stylesheet" type="text/css" href="portada.css" id="theme-link">
     <link rel="alternate stylesheet" href="portada_invert.css">
 
 </head>
 <body>
     
+<!---
+Wrapper principal, es grid layout exterior que separa los elementos de la página
+-->
+
     <div class="wrapper_pr">
         <div class="head"><img class="icono" src="./pic/chemical-icon-png-15.png">
             <h1 class="titulo">
@@ -21,12 +28,32 @@
         <button class="menu" id="menu3" onclick="changeCSS()">
             <img id="luz" src="./pic/SeekPng.com_light-bulb-png_62700.png" >
         </button>
-
-        <div class="add"> Enlaces utilizados:
-            <a href="wikipedia.com">
-                wikipedia.com
+        <!---
+        Clase para add para los elementos adicionales
+        -->
+        <div class="add">
+            <p>
+                <strong> Enlaces utilizados para la infomación de los cientificos: </strong>
+            </p>
+            <a href="https://es.wikipedia.org/wiki/Marie_Curie">
+                >wikipedia de Marie Curie
+            </a>
+            <p>
+                <strong>Enlaces utilizados para el desarrollo de la página:</strong>
+            </p>
+            <a href="https://developer.mozilla.org/es/docs/Web/CSS/">
+                >Página sobre css de Mozilla Firefox
+            </a>
+            <a href="https://www.w3schools.com/">
+                >Página de tutoriales de html y css w3schools
+            </a>
+            <a href="https://gridbyexample.com/examples/">
+                >Página sobre grid layout
             </a>
         </div>
+        <!---
+        wrapper de los cientificos grid layout dentro del principal para añadir cientificos
+        -->
         <div class="wrapper_cient">
             <a href="cientifico.html"><div class="box one">
                 <img class="cient" src="./pic/mariecurie.jpeg" alt="Marie Curie">
@@ -51,6 +78,10 @@
             </pre>
         </div>
     </div>   
+
+<!---
+Script para cambiar entre los dos css
+-->
 
     <script>
         // Select the stylesheet <link>

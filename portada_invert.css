@@ -1,3 +1,8 @@
+/*
+Este css es igual que el portada.css pero cambia todos los fondos a blanco y añade contorno a todos
+los grids.
+*/
+
 body{
     background: white;
 }
@@ -78,8 +83,7 @@ a{
 .add{
 
     border: 1px solid black;
-    border-radius: 2vw;    
-    display: grid;
+    border-radius: 2vw;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
