@@ -1,38 +1,131 @@
 <html>
 <head>
-    <title>cientifico</title>
-    <link rel="stylesheet" type="text/css" href="portada.css">
+    <link rel="stylesheet" type="text/css" href="imprimir.css" id="theme-link">
+
 </head>
 <body>
     
     <div class="wrapper_pr">
-        <div class="head"><img class="icono" src="./pic/chemical-icon-png-15.png">
+        <div class="head">
             <h1 class="titulo">
-                Cientificos importantes
+                Científicos Importantes
             </h1>
         </div>
         <a class="menu" id="menu1" href="portada.html">
             Home
         </a>
-        <div class="menu" id="menu2">
-            Menu 2
+        <a class="menu" id="menu2" href="cientifico.html">
+            Último Científico
+        </a>
+        <button class="menu" id="menu3" onclick="changeCSS()">
+            <img id="luz" src="./pic/SeekPng.com_light-bulb-png_62700.png">
+        </button>
+        <div class="cientifico_desc"">
+            <h1 id="nombre">
+                Marie Curie
+            </h1>
+            <figure class="cient_ft">
+                <img src="./pic/mariecurie.jpeg">
+                <figcaption>Fig.1 - Marie Curie en 1900.</figcaption>
+            </figure>
+            <h2 id="fechas">
+                7/11/1867 - 4/07/1934
+            </h2>
+            <h3 id="pais">
+                Varsovia
+            </h3>
+            <p>
+                Maria Salomea Skłodowska-Curie, más
+                conocida como Marie Curie o Madame
+                Curie (Varsovia, 7 de noviembre de 1867-Passy,
+                4 de julio de 1934), fue una física y química
+                polaca nacionalizada francesa. Pionera en el
+                campo de la radiactividad, es la primera y única
+                persona en recibir dos premios Nobel en distintas
+                especialidades científicas: Física y Química.
+                También fue la primera mujer en ocupar el
+                puesto de profesora en la Universidad de París y
+                la primera en recibir sepultura con honores en el
+                Panteón de París por méritos propios en 1995
+            </p>
+            <p>
+                Nació en Varsovia, en lo que entonces era el
+                Zarato de Polonia (territorio administrado por el
+                Imperio ruso). Estudió clandestinamente en la
+                «universidad flotante» de Varsovia y comenzó su
+                formación científica en dicha ciudad. En 1891, a
+                los 24 años, siguió a su hermana mayor
+                Bronisława Dłuska a París, donde culminó sus
+                estudios y llevó a cabo sus trabajos científicos
+                más sobresalientes. Compartió el premio Nobel
+                de Física de 1903 con su marido Pierre Curie y el
+                físico Henri Becquerel. Años después, ganó en
+                solitario el premio Nobel de Química de 1911.
+                Aunque recibió la ciudadanía francesa y apoyó a
+                su nueva patria, nunca perdió su identidad
+                polaca: enseñó a sus hijas su lengua materna y las
+                llevaba a sus visitas a Polonia. Nombró el
+                primer elemento químico que descubrió, el
+                polonio, como su país de origen.
+            </p>
+            <p>
+                Sus logros incluyen los primeros estudios sobre el
+                fenómeno de la radiactividad (término que ella
+                misma acuñó), técnicas para el
+                aislamiento de isótopos radiactivos y el
+                descubrimiento de dos elementos —el polonio y el
+                radio—. Bajo su dirección, se llevaron a cabo los
+                primeros estudios en el tratamiento de neoplasias
+                con isótopos radiactivos. Fundó el Instituto Curie
+                en París y en Varsovia, que se mantienen entre los
+                principales centros de investigación médica en la
+                actualidad. Durante la Primera Guerra Mundial
+                creó los primeros centros radiológicos para uso
+                militar.
+            </p>
+
+                <a class="twitter" href="https://twitter.com/mariecurieuk">
+                    TW
+                </a>
+                <a class="facebook" href="https://www.facebook.com/MarieCurieUK">
+                    FB
+                </a>
+                <a class="print" href="cientifico.imprimir.html">
+                    Print
+                </a>
+
         </div>
-        <div class="menu" id="menu3">
-            Menu 3
-        </div>
-        
+
 
         <div class="add"> Enlaces utilizados:
             <a href="wikipedia.com">
                 wikipedia.com
             </a>
         </div>
-        
         <div class="pie">
             <pre>Practica realizada para la asignatura de SIBW en la UGR
 © 2023 - Pablo Cantudo Gómez
             </pre>
         </div>
-    </div>   
+        <img class="icono" src="./pic/chemical-icon-png-15.png">
+    </div>
+
+    <script>
+        // Select the stylesheet <link>
+        const theme = document.querySelector("#theme-link");
+
+        // Listen for a click on the button
+        function changeCSS(){
+        // If the current URL contains "ligh-theme.css"
+            if (theme.getAttribute("href") == "portada.css") {
+                // ... then switch it to "dark-theme.css"
+                theme.href = "portada_invert.css";
+            // Otherwise...
+            } else {
+                // ... switch it to "light-theme.css"
+                theme.href = "portada.css";
+            }
+        }
+    </script>
 </body>
 </html>

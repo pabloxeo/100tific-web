@@ -1,108 +1,71 @@
-body{
-    background: rgb(47, 47, 47);
-}
-a{
-    color: black;
-    text-decoration: none;
-}
 
-.wrapper_pr{
-    margin-left: 2%;
-    margin-right: 2%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
-}
-.head{
-    background: #EDE7F6;
-    padding: 2vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    gap: 1vw;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    display: grid;
-    gap: none;
-}
+@page{
+    size: A4 landscape;}
+
+  
+
 .titulo{
+    font-size: 4vw;
     grid-column-start: 2;
     grid-column-end: 3;
     
 }
 .menu{
-    margin-top: -2vw;
-    background-color: #EDE7F6;
-    padding: 2vw;
-    grid-row-start: 2;
-    text-align: center;
-    font-size: x-large;
-}
-#menu1{
-    border-bottom-left-radius: 2vw;
-}
-#menu2{
-    margin-left: -2vw;
-}
-#menu3{
-    border-bottom-right-radius: 2vw;
-    margin-left: -2vw;
+    display: none;
+    visibility: collapse;
 }
 
 .wrapper_cient {
-    display: grid;
-    gap: 1vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: auto;
+    display: none;
+    visibility: collapse;
   }
-.box {
-    background: #EDE7F6;
-    padding: 1vw;
-    border-radius: 10%;
-    text-align-last: center;
-    font: 12px system-ui;
-}
+
 .add{
-    border-radius: 2vw;    
-    background: #EDE7F6;
-    display: grid;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: auto;
-    text-align: justify;
-    padding: 1vw;
+    display: none;
+    visibility: collapse;
 }
 
 .pie{
-    text-align-last: center;
+    float: left;
+    max-height: 4vw;
+    font-size: 1vw;
     border-radius: 2vw;
-    background: #EDE7F6;
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: auto;
-    grid-row-end: auto;
+    text-align: left;
 }
 .foto{
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: large;
+    display: none;
+    visibility: collapse;
 }
 .cient{
-    height: auto;
-    width: auto;
-    max-height: 12vw;
-    max-width: 12vw;
-    border-radius: 50%;
+    display: none;
+    visibility: collapse;
 }
 
 .icono{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    height: 9vw;
-    width: 9vw;
+    float: right;
+    height: 3vw;
+    width: 3vw;
+}
+
+.cientifico_desc{
+    border-radius: 2vw;
+    padding: 1vw;
+    text-align: justify;
+}
+.cient_ft{
+    float: right;
+}
+
+.twitter{
+    display: none;
+    visibility: collapse;
+}
+.facebook{
+    display: none;
+    visibility: collapse;
+    
+}
+.print{
+    display: none;
+    visibility: collapse;
 }
