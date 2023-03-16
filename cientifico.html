@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <div class="wrapper_pr">
+    <div id="wrapper_pr" >
         <div class="head"><img class="icono" src="./pic/chemical-icon-png-15.png">
             <h1 class="titulo">
                 Científicos Importantes
@@ -15,9 +15,9 @@
         <a class="menu" id="menu1" href="portada.html">
             Home
         </a>
-        <a class="menu" id="menu2" href="cientifico.html">
-            Último Científico
-        </a>
+        <button class="menu" id="menu2" onclick="openNav()">
+            Comentarios
+        </button>
         <button class="menu" id="menu3" onclick="changeCSS()">
             <img id="luz" src="./pic/SeekPng.com_light-bulb-png_62700.png">
         </button>
@@ -110,15 +110,61 @@
             </p>
             <a href="https://developer.mozilla.org/es/docs/Web/CSS/">
                 >Página sobre css de Mozilla Firefox
-            </a>
+            </a><br>
             <a href="https://www.w3schools.com/">
                 >Página de tutoriales de html y css w3schools
-            </a>
+            </a><br>
             <a href="https://gridbyexample.com/examples/">
                 >Página sobre grid layout
             </a>
 
         </div>
+
+        <div id="mySidebar" class="sidebar">
+            <a class="closebtn" onclick="closeNav()">×</a>
+            <div class="ejemplos">
+                <h2>
+                    Pabloxeo<h3>pabloxeo@gmail.com</h3>
+                </h2>
+                <p>
+                    Esto es un comentario de ejemplo
+                </p>
+            </div>
+            <div class="ejemplos">
+                <h2>
+                    Pabloxeo<h3>pabloxeo@gmail.com</h3>
+                </h2>
+                <p>
+                    Esto es un segundo comentario de ejemplo, más largo
+                    que el anterior para mostrar varias líneas de texto.
+                </p>
+            </div>
+            <div class="ejemplos" id="comment_ej">
+                <h2 id="nombre_ej">
+                    <h3 id="correo_ej"></h3>
+                </h2>
+                <p id="texto_ej">
+                </p>
+            </div>
+ 
+            
+            
+            <div class="comentarios">
+                <h1>Comentarios</h1>
+
+                <label for="name"><b>Nombre: </b></label>
+                <textarea type="email" placeholder="Escriba su nombre.." name="name" id="n" required></textarea><br>
+                <label for="correo"><b>Correo electrónico: </b></label>
+                <textarea placeholder="Escriba su correo.." name="correo" id="e" required></textarea><br>
+                <label for="comment"><b>Comentario: </b></label>
+                <textarea placeholder="Escriba su comentario.." name="comment" id="c" required></textarea><br>
+            
+                <button type="submit" class="btn" onclick="comentar()">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
+            </div>
+        </div>
+
+
         <div class="pie">
             <pre>Practica realizada para la asignatura de SIBW en la UGR
 © 2023 - Pablo Cantudo Gómez
@@ -126,22 +172,6 @@
         </div>
     </div>
 
-    <script>
-        // Select the stylesheet <link>
-        const theme = document.querySelector("#theme-link");
-
-        // Listen for a click on the button
-        function changeCSS(){
-        // If the current URL contains "ligh-theme.css"
-            if (theme.getAttribute("href") == "portada.css") {
-                // ... then switch it to "dark-theme.css"
-                theme.href = "portada_invert.css";
-            // Otherwise...
-            } else {
-                // ... switch it to "light-theme.css"
-                theme.href = "portada.css";
-            }
-        }
-    </script>
+    <script src="funciones.js"></script>
 </body>
 </html>

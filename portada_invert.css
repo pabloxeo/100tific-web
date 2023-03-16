@@ -11,13 +11,15 @@ a{
     text-decoration: none;
 }
 
-.wrapper_pr{
+#wrapper_pr {
     margin-left: 2%;
     margin-right: 2%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
+    transition: margin-right 0.5s;
 }
+
 .head{
 
     border: 1px solid black;
@@ -44,6 +46,7 @@ a{
     text-align: center;
     font-size: 2vw;
     border: 1px solid black;
+    cursor: pointer;
 }
 #menu1{
     border-bottom-left-radius: 2vw;
@@ -161,5 +164,57 @@ a{
     font-size: 3vw;
     display: inline-block;
     border: 1px solid black;
-    background-color: white;
 }
+
+.sidebar {
+    display: grid;
+    border: 1px solid black;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidebar .closebtn {
+    color: black;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 10px;
+  }
+  .ejemplos{
+    border: 1px solid black;
+    height: min-content;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    width: 80%;
+    font-size: small;
+    margin-left: 2vw;
+  }
+  .ejemplos h3{
+      color: gray;
+      font-weight: lighter;
+      font-style: oblique;
+  }
+
+  .comentarios{
+      text-align: center;
+  }
+
+  .comentarios textarea {
+    width: 80%;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 20px;
+  }

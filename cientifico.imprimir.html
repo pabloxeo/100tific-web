@@ -133,22 +133,6 @@
         <img class="icono" src="./pic/chemical-icon-png-15.png">
     </div>
 
-    <script>
-        // Select the stylesheet <link>
-        const theme = document.querySelector("#theme-link");
-
-        // Listen for a click on the button
-        function changeCSS(){
-        // If the current URL contains "ligh-theme.css"
-            if (theme.getAttribute("href") == "portada.css") {
-                // ... then switch it to "dark-theme.css"
-                theme.href = "portada_invert.css";
-            // Otherwise...
-            } else {
-                // ... switch it to "light-theme.css"
-                theme.href = "portada.css";
-            }
-        }
-    </script>
+    <script src="funciones.js"></script>
 </body>
 </html>
