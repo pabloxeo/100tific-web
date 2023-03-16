@@ -11,12 +11,14 @@ a{
 /*
 Grid layout externo
 */
-.wrapper_pr{
+#wrapper_pr {
+    height: 100%;
     margin-left: 2%;
     margin-right: 2%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2vw;
+    transition: margin-right 0.5s;
 }
 
 /*
@@ -25,7 +27,7 @@ Cabecera con el título y la imagen
 
 .head{
     border: 1px solid black;
-    background: #EDE7F6;
+    background: seashell;
     padding: 2vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
@@ -51,12 +53,16 @@ Menu y sus submenús
 
 .menu{
     margin-top: -2vw;
-    background-color: #EDE7F6;
+    background-color: seashell;
     padding: 2vw;
     grid-row-start: 2;
     text-align: center;
     font-size: 2vw;
     border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #menu1{
     border-bottom-left-radius: 2vw;
@@ -92,7 +98,7 @@ Grid layout interno para los científicos
 Caja de cada científico
 */
 .box {
-    background: #EDE7F6;
+    background: seashell;
     padding: 1vw;
     border-radius: 10%;
     text-align-last: center;
@@ -113,7 +119,7 @@ Elementos adicionales
 */
 .add{
     border-radius: 2vw;    
-    background: #EDE7F6;
+    background: seashell;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -128,7 +134,7 @@ Pie de página
     font-size: 1vw;
     text-align-last: center;
     border-radius: 2vw;
-    background: #EDE7F6;
+    background: seashell;
     grid-column-start: 1;
     grid-column-end: 4;
 }
@@ -161,7 +167,7 @@ Logo de la página web
 Descripción del cientifico en cientifico.html
 */
 .cientifico_desc{
-    background-color: #EDE7F6;
+    background-color: seashell;
     border-radius: 2vw;
     padding: 1vw;
     grid-column-start: 1;
@@ -181,10 +187,10 @@ Link a redes sociales
 .twitter{
     border-radius: 50%;
     padding: 1vw;
-    margin: 2vw;
-    margin-left: 15%;
+    margin-left: 8vw;
     font-size: 3vw;
     display: inline-block;
+    position: relative;
     border: 1px solid black;
     background-color: seashell;
 }
@@ -192,10 +198,10 @@ Link a redes sociales
 .facebook{
     border-radius: 50%;
     padding: 1vw;
-    margin: 2vw;
-    margin-left: 15%;
+    margin-left: 8vw;
     font-size: 3vw;
     display: inline-block;
+    position: relative;
     border: 1px solid black;
     background-color: seashell;
     
@@ -206,10 +212,69 @@ Link a la página para imprimir cientifico.imprimir.html
 .print{
     border-radius: 50%;
     padding: 1vw;
-    margin: 2vw;
-    margin-left: 15%;
+    margin-left: 8vw;
     font-size: 3vw;
     display: inline-block;
+    position: relative;
     border: 1px solid black;
     background-color: seashell;
+}
+
+
+.sidebar {
+    display: grid;
+    background: seashell;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidebar .closebtn {
+    color: black;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    padding: 10px;
+}
+.ejemplos{
+    height: min-content;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    width: 80%;
+    background-color: white;
+    font-size: small;
+    margin-left: 2vw;
+}
+.ejemplos h3{
+    color: gray;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+.comentarios{
+    text-align: center;
+}
+
+.comentarios textarea {
+    width: 80%;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 20px;
+}
+
+#comment_ej:empty{
+    visibility: hidden;
+    display: none;
 }
