@@ -119,7 +119,9 @@
             </a>
 
         </div>
-
+        <!--
+            Zone de comentarios y comentarios ya generados
+        -->
         <div id="mySidebar" class="sidebar">
             <a class="closebtn" onclick="closeNav()">×</a>
             <div class="ejemplos">
@@ -128,6 +130,9 @@
                 </h2>
                 <p>
                     Esto es un comentario de ejemplo
+                </p>
+                <p>
+                    2023:03:20:17:43:00 
                 </p>
             </div>
             <div class="ejemplos">
@@ -138,17 +143,28 @@
                     Esto es un segundo comentario de ejemplo, más largo
                     que el anterior para mostrar varias líneas de texto.
                 </p>
+                <p>
+                    2023:03:20:17:43:00
+                </p>
+
             </div>
+            <!---
+            Espacio para el comentario de ejemplo
+            -->
             <div class="ejemplos" id="comment_ej">
                 <h2 id="nombre_ej">
                     <h3 id="correo_ej"></h3>
                 </h2>
                 <p id="texto_ej">
                 </p>
+                <p id = "fecha">
+                </p>
             </div>
  
             
-            
+            <!--
+                Cuadro para escribir comentario
+            -->
             <div class="comentarios">
                 <h1>Comentarios</h1>
 
@@ -157,10 +173,9 @@
                 <label for="correo"><b>Correo electrónico: </b></label>
                 <textarea placeholder="Escriba su correo.." name="correo" id="e" required></textarea><br>
                 <label for="comment"><b>Comentario: </b></label>
-                <textarea placeholder="Escriba su comentario.." name="comment" id="c" required></textarea><br>
+                <textarea placeholder="Escriba su comentario.." name="comment" id="c"  required></textarea><br>
             
                 <button type="submit" class="btn" onclick="comentar()">Enviar</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Cancelar</button>
             </div>
         </div>
 

@@ -274,7 +274,6 @@ Link a la página para imprimir cientifico.imprimir.html
     min-height: 20px;
 }
 
-#comment_ej:empty{
+#comment_ej{
     visibility: hidden;
-    display: none;
 }

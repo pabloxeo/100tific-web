@@ -218,3 +218,8 @@ a{
     resize: none;
     min-height: 20px;
   }
+
+
+#comment_ej{
+    visibility: hidden;
+}
